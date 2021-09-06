@@ -88,6 +88,13 @@
                                     <constraint firstAttribute="trailing" secondItem="pRX-Tw-XCq" secondAttribute="trailing" id="zbX-PF-BSg"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uwe-uc-T0Z">
+                                <rect key="frame" x="184" y="438" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="click:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QJM-78-4VL"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -95,9 +102,14 @@
                             <constraint firstItem="RRb-XW-d6x" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="1FV-NT-0jn"/>
                             <constraint firstItem="XwU-o2-t02" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="aBY-OA-yQK"/>
                             <constraint firstItem="RRb-XW-d6x" firstAttribute="leading" secondItem="XwU-o2-t02" secondAttribute="trailing" constant="8" id="aT4-O6-jr1"/>
+                            <constraint firstItem="uwe-uc-T0Z" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="pBs-pr-E1O"/>
                             <constraint firstItem="XwU-o2-t02" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="twr-Dq-XhG"/>
+                            <constraint firstItem="uwe-uc-T0Z" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="v3y-be-3Pf"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="greyLabel" destination="pRX-Tw-XCq" id="m8e-Vm-4pT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
